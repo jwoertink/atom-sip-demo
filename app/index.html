@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="nw-demo">
+  <head>
+    <meta charset="utf-8" />
+    <title>NW Demo</title>
+  </head>
+  <body>
+    <div class="setup">
+      <input type="text" name="server" value="pbx.dev" id="server" placeholder="Server" />
+      <input type="text" name="username" value="1063" id="username" placeholder="Username" />
+      <input type="password" name="password" value="password" id="password" placeholder="Password" />
+      <input type="text" name="extension" value="1060" id="extension" placeholder="Extension" />
+      <button type="submit" id="submit">Make Call</button>
+    </div>
+    <p>
+      Enter in the Asterisk server, your SIP username and password, then the extension you want to call.
+    </p>
+    <ng-view>
+
+    </ng-view>
+    <script src="./angular.js"></script>
+    <script src="./angular-routing.js"></script>
+    <script src="./sip.js"></script>
+    <script src="./application.js"></script>
+  </body>
+</html>
